@@ -36,8 +36,8 @@ def get_embedding(face,resnet):
 def calculate_l2_distance(embedding1, embedding2):
     return torch.norm(embedding1 - embedding2).item()
 
-image1_path = ("/Users/metsa/PycharmProjects/pythonProject2/project/face_detecting/faces/pos/sean1.jpeg")
-image2_path = ("//Users/metsa/PycharmProjects/pythonProject2/project/face_detecting/faces/neg/image7.jpeg")
+image1_path = ("/----/----/----/")
+image2_path = ("/----/----/----/")
 
 image1 = load_and_preprocess_image(image1_path, mtcnn)
 image2 = load_and_preprocess_image(image2_path, mtcnn)
